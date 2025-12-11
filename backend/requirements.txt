@@ -1,5 +1,5 @@
 # Django Core
-Django==5.0.1
+Django==5.0.10
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.3.1
 
@@ -16,7 +16,7 @@ django-filter==23.5
 python-decouple==3.8
 
 # Encryption
-cryptography==42.0.0
+cryptography==42.0.4
 
 # Testing
 pytest==7.4.4
@@ -25,7 +25,7 @@ pytest-cov==4.1.0
 factory-boy==3.3.0
 
 # Production Server
-gunicorn==21.2.0
+gunicorn==22.0.0
 
 # Code Quality
 flake8==7.0.0

@@ -62,6 +62,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Webhook integrations
 - Mobile apps (iOS/Android)
 
+## [1.0.1] - 2024-01-20
+
+### Security
+- **CRITICAL**: Updated Django from 5.0.1 to 5.0.10 to patch multiple vulnerabilities:
+  - SQL injection in HasKey(lhs, rhs) on Oracle (CVE-2024-XXXX)
+  - Denial-of-service attack in intcomma template filter
+  - SQL injection via _connector keyword argument in QuerySet and Q objects
+  - Denial-of-service vulnerability in HttpResponseRedirect on Windows
+- **CRITICAL**: Updated cryptography from 42.0.0 to 42.0.4 to patch NULL pointer dereference vulnerability
+- **CRITICAL**: Updated gunicorn from 21.2.0 to 22.0.0 to patch HTTP Request/Response Smuggling vulnerabilities
+
+### Changed
+- Updated requirements.txt with patched dependency versions
+
 ## [Unreleased]
 
 ### Planned
